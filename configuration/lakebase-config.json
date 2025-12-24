@@ -1,0 +1,47 @@
+{
+  "instance_name": "expense-tracker-lakebase",
+  "database_name": "expense_tracker_db",
+  "instance_type": "SMALL",
+  "storage_size_gb": 100,
+  "postgres_version": "15",
+  "region": "us-west-2",
+  "ssl_enabled": true,
+  "backup_retention_days": 7,
+  "connection": {
+    "host": "{{INSTANCE_HOST}}",
+    "port": 5432,
+    "database": "expense_tracker_db",
+    "username": "admin",
+    "ssl_mode": "require"
+  },
+  "tables": [
+    {
+      "name": "categories",
+      "description": "Expense categories",
+      "primary_key": "category_id"
+    },
+    {
+      "name": "expenses",
+      "description": "Individual expense transactions",
+      "primary_key": "expense_id",
+      "foreign_keys": [
+        {
+          "column": "category_id",
+          "references": "categories(category_id)"
+        }
+      ]
+    },
+    {
+      "name": "budgets",
+      "description": "Monthly budget allocations",
+      "primary_key": "budget_id",
+      "foreign_keys": [
+        {
+          "column": "category_id",
+          "references": "categories(category_id)"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,52 @@
+expense_id,category_id,amount,expense_date,description,payment_method,vendor,tags
+1,1,125.50,2024-12-20,Weekly groceries,Credit Card,Whole Foods,groceries
+2,2,45.99,2024-12-20,Lunch meeting,Cash,Chipotle,dining
+3,3,35.00,2024-12-19,Uber to work,Debit Card,Uber,transportation
+4,7,230.45,2024-12-19,New headphones,Credit Card,Amazon,electronics
+5,5,85.00,2024-12-18,Monthly streaming,Credit Card,Netflix,subscription
+6,1,95.25,2024-12-18,Groceries,Debit Card,Trader Joes,food
+7,6,150.00,2024-12-17,Prescription refill,Credit Card,CVS Pharmacy,healthcare
+8,4,89.99,2024-12-17,Electric bill,Auto-pay,PG&E,utilities
+9,2,62.50,2024-12-16,Coffee and breakfast,Cash,Starbucks,breakfast
+10,8,450.00,2024-12-16,Flight booking,Credit Card,United Airlines,travel
+11,1,78.30,2024-12-15,Groceries,Credit Card,Safeway,food
+12,3,50.00,2024-12-15,Gas fill up,Credit Card,Shell,gas
+13,7,199.99,2024-12-14,New shoes,Debit Card,Nike,clothing
+14,2,38.75,2024-12-14,Dinner,Credit Card,Olive Garden,dining
+15,5,24.99,2024-12-13,Movie tickets,Credit Card,AMC,entertainment
+16,1,145.80,2024-12-12,Groceries,Credit Card,Costco,bulk
+17,9,49.99,2024-12-12,Online course,Credit Card,Udemy,education
+18,3,25.00,2024-12-11,Parking,Cash,City Parking,parking
+19,2,55.20,2024-12-10,Lunch with friends,Credit Card,Panera,social
+20,1,92.40,2024-12-09,Groceries,Debit Card,Whole Foods,organic
+21,6,85.00,2024-12-09,Doctor copay,Credit Card,Kaiser,medical
+22,7,315.00,2024-12-08,Winter jacket,Credit Card,North Face,clothing
+23,4,120.00,2024-12-08,Internet bill,Auto-pay,Comcast,utilities
+24,5,18.50,2024-12-07,Concert tickets,Credit Card,Ticketmaster,entertainment
+25,1,68.95,2024-12-06,Groceries,Credit Card,Target,household
+26,3,42.00,2024-12-06,Uber rides,Debit Card,Uber,rideshare
+27,2,72.30,2024-12-05,Date night dinner,Credit Card,Cheesecake Factory,dining
+28,7,89.99,2024-12-04,Video game,Digital Wallet,PlayStation Store,gaming
+29,1,112.75,2024-12-03,Weekly groceries,Credit Card,Whole Foods,organic
+30,5,35.00,2024-12-02,Gym membership,Auto-pay,24 Hour Fitness,fitness
+31,2,28.50,2024-12-01,Coffee,Cash,Starbucks,coffee
+32,3,60.00,2024-11-30,Gas,Credit Card,Chevron,fuel
+33,7,425.00,2024-11-29,Laptop accessories,Credit Card,Apple Store,electronics
+34,1,98.20,2024-11-28,Thanksgiving groceries,Debit Card,Safeway,holiday
+35,2,165.00,2024-11-28,Thanksgiving dinner out,Credit Card,Restaurant,holiday
+36,6,200.00,2024-11-27,Dental checkup,Credit Card,Dental Office,healthcare
+37,4,75.50,2024-11-26,Water bill,Auto-pay,Water District,utilities
+38,5,45.00,2024-11-25,Streaming service,Credit Card,Hulu,subscription
+39,1,135.60,2024-11-24,Groceries,Credit Card,Trader Joes,food
+40,3,38.00,2024-11-23,Public transit pass,Debit Card,BART,transit
+41,7,278.99,2024-11-22,Black Friday shopping,Credit Card,Best Buy,electronics
+42,2,52.80,2024-11-21,Lunch,Credit Card,Chipotle,dining
+43,9,99.00,2024-11-20,Books,Credit Card,Amazon,reading
+44,1,88.45,2024-11-19,Groceries,Credit Card,Whole Foods,organic
+45,5,125.00,2024-11-18,Concert,Credit Card,Live Nation,entertainment
+46,2,41.25,2024-11-17,Brunch,Credit Card,Local Cafe,dining
+47,3,55.00,2024-11-16,Gas,Debit Card,Shell,fuel
+48,7,189.99,2024-11-15,Smart watch,Credit Card,Amazon,electronics
+49,1,102.30,2024-11-14,Groceries,Credit Card,Costco,bulk
+50,4,95.00,2024-11-13,Gas bill,Auto-pay,PG&E,utilities
+

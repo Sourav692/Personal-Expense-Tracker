@@ -1,0 +1,48 @@
+{
+  "workflow_name": "expense-tracker-sync-pipeline",
+  "description": "Automated pipeline to sync expense data from Lakebase to Lakehouse",
+  "schedule": {
+    "cron_expression": "0 0 2 * * ?",
+    "timezone": "America/Los_Angeles",
+    "description": "Daily at 2 AM PST"
+  },
+  "email_notifications": {
+    "on_start": [],
+    "on_success": [],
+    "on_failure": ["{{USER_EMAIL}}"]
+  },
+  "max_concurrent_runs": 1,
+  "timeout_seconds": 3600,
+  "tasks": [
+    {
+      "task_key": "sync_expenses",
+      "description": "Sync expense data from Lakebase (OLTP) to Unity Catalog (OLAP)",
+      "type": "notebook",
+      "notebook_path": "/Workspace/Users/{{USER}}/expense-tracker/notebooks/03-sync-pipeline",
+      "timeout_seconds": 1800,
+      "retry_on_timeout": false,
+      "max_retries": 2,
+      "min_retry_interval_millis": 60000
+    },
+    {
+      "task_key": "validate_results",
+      "description": "Validate synced data quality and generate reports",
+      "type": "notebook",
+      "notebook_path": "/Workspace/Users/{{USER}}/expense-tracker/notebooks/05-validate-results",
+      "depends_on": ["sync_expenses"],
+      "timeout_seconds": 600,
+      "retry_on_timeout": false,
+      "max_retries": 1
+    }
+  ],
+  "cluster_config": {
+    "type": "shared",
+    "note": "Replace with actual cluster_id in production"
+  },
+  "parameters": {
+    "catalog_name": "main",
+    "schema_name": "expense_tracker",
+    "sync_mode": "incremental"
+  }
+}
+

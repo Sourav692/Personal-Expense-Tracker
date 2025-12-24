@@ -1,0 +1,12 @@
+category_id,category_name,category_type,description
+1,Groceries,Essential,Food and household items
+2,Dining Out,Lifestyle,Restaurants and cafes
+3,Transportation,Essential,Gas, public transit, parking
+4,Utilities,Essential,Electricity, water, internet
+5,Entertainment,Lifestyle,Movies, concerts, hobbies
+6,Healthcare,Essential,Medical expenses, prescriptions
+7,Shopping,Lifestyle,Clothing, electronics, misc
+8,Travel,Lifestyle,Vacations and trips
+9,Education,Investment,Courses, books, training
+10,Savings,Investment,Savings and investments
+

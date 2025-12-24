@@ -1,0 +1,73 @@
+{
+  "app_name": "Personal Expense Tracker",
+  "version": "1.0.0",
+  "environment": "development",
+  "databricks": {
+    "workspace_url": "{{DATABRICKS_WORKSPACE_URL}}",
+    "warehouse_id": "{{SQL_WAREHOUSE_ID}}",
+    "catalog": "main",
+    "schema": "expense_tracker"
+  },
+  "data_sources": {
+    "lakebase": {
+      "type": "postgresql",
+      "instance_name": "expense-tracker-lakebase",
+      "database": "expense_tracker_db",
+      "connection_type": "JDBC",
+      "ssl_enabled": true
+    },
+    "lakehouse": {
+      "type": "unity_catalog",
+      "catalog": "main",
+      "schema": "expense_tracker",
+      "format": "delta",
+      "tables": [
+        "categories",
+        "expenses",
+        "budgets",
+        "monthly_spending_by_category",
+        "budget_vs_actual"
+      ]
+    }
+  },
+  "app_settings": {
+    "theme": "light",
+    "default_date_range": 30,
+    "currency": "USD",
+    "date_format": "YYYY-MM-DD",
+    "number_format": "#,##0.00",
+    "refresh_interval_seconds": 300,
+    "cache_ttl_seconds": 300
+  },
+  "features": {
+    "expense_tracking": true,
+    "budget_management": true,
+    "analytics": true,
+    "reports": true,
+    "alerts": true,
+    "data_export": true
+  },
+  "alerts": {
+    "budget_warning_threshold": 0.9,
+    "budget_danger_threshold": 1.0,
+    "large_expense_threshold": 500,
+    "notification_channels": ["email", "app"]
+  },
+  "categories": {
+    "essential": ["Groceries", "Transportation", "Utilities", "Healthcare"],
+    "lifestyle": ["Dining Out", "Entertainment", "Shopping", "Travel"],
+    "investment": ["Education", "Savings"]
+  },
+  "chart_colors": {
+    "primary": "#1f77b4",
+    "secondary": "#ff7f0e",
+    "success": "#2ca02c",
+    "warning": "#ffbb28",
+    "danger": "#d62728",
+    "info": "#17becf",
+    "essential": "#8c564b",
+    "lifestyle": "#e377c2",
+    "investment": "#7f7f7f"
+  }
+}
+

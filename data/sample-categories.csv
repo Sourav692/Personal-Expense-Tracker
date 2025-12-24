@@ -1,0 +1,12 @@
+category_id,category_name,description,is_active
+1,Groceries,Food and household items,true
+2,Dining Out,Restaurants and cafes,true
+3,Transportation,Travel and commute expenses,true
+4,Entertainment,Movies, streaming, hobbies,true
+5,Gas & Fuel,Vehicle fuel expenses,true
+6,Healthcare,Medical and pharmacy expenses,true
+7,Utilities,Electricity, water, internet,true
+8,Shopping,Clothing and general shopping,true
+9,Bills & Subscriptions,Monthly recurring bills,true
+10,Other,Miscellaneous expenses,true
+

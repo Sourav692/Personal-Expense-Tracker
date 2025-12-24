@@ -1,0 +1,17 @@
+{
+  "instance": {
+    "instance_id": "",
+    "name": "personal-expense-tracker-db",
+    "region": "us-east-1",
+    "status": "",
+    "created_at": ""
+  },
+  "connection": {},
+  "configuration": {
+    "instance_size": "SMALL",
+    "storage_size_gb": 20,
+    "database_version": "15",
+    "ssl_enabled": true
+  }
+}
+

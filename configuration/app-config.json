@@ -1,0 +1,22 @@
+{
+  "app_name": "expense-tracker",
+  "description": "Personal Expense Tracker Application",
+  "runtime": {
+    "python_version": "3.10",
+    "databricks_runtime": "13.3.x-scala2.12"
+  },
+  "lakebase": {
+    "config_file": "configuration/lakebase-config.json"
+  },
+  "lakehouse": {
+    "catalog": "main",
+    "schema": "expense_tracker",
+    "table": "expenses"
+  },
+  "features": {
+    "enable_analytics": true,
+    "enable_reporting": true,
+    "enable_export": true
+  }
+}
+
